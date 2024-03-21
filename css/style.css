@@ -1,0 +1,275 @@
+
+html{
+
+font-size: 16px; /*tamaño letra multiplica a rem*/
+
+}
+
+
+body {
+
+	background-color: white; /*color de fondo*/
+	color: #8600b3; /*color general de letra*/
+	font-family: "Lucida Handwriting","Brush Script MT",cursive; /*tipo de letra parrafo*/
+}
+
+
+h1 {
+
+	color: #a3297a;
+	font-family: "Homemade Apple", cursive;
+	
+	text-transform: capitalize; /*pone la primera letra en mayus*/
+	text-align: center; /*alinea el texto al centro*/
+	text-shadow: 4px 4px 10px #DB7093; /*sombra*/
+	font-size: 4.5rem;
+}
+
+
+h2,h3 {
+
+	color: #cc3399;
+	font-family: "Reenie Beanie", cursive;
+}
+
+
+h2 {
+
+font-size: 3rem;
+
+}
+
+
+h3 {
+
+font-size: 2rem;
+
+}
+
+
+a {
+	color: inherit;/*adquiere el del padre*/
+	text-decoration: none;/*quita subrayados*/
+}
+
+
+
+#contenedor{
+
+	/*contiene el body*/
+
+	border-top: 50px solid #ffffb3;
+	border-bottom: 50px solid #ffffb3;
+	width: 65%; /*ancho*/
+	margin-left: auto; /*centra por la izquierda*/
+	margin-right: auto; /*centra por la derecha*/
+	background-color: #e6ccff; /*color de fondo*/
+	padding: 30px; /*espacio interior de la caja*/
+	min-width: 500px;
+	
+}
+
+
+#indice-articulos {
+
+	color: mintcream;
+	list-style-type: none; /*quita los puntitos*/
+	font-family: "courier new", monospace;
+	font-weight: bold; /*negrita*/
+	font-style: italic; /*cursiva*/
+
+}
+
+
+ol {
+
+    color: mediumorchid;
+
+}
+
+
+ul {
+
+	color: darkmagenta;
+	font-size: 1.25rem;
+
+}
+
+
+.lista-colorida {
+
+    color: mediumvioletred;
+
+}
+
+
+.par {
+
+	color: lightCoral;
+
+}
+
+
+.impar {
+
+	color:purple;
+
+}
+
+
+img {
+
+	max-width:100%; /*cambio a su total el tamaño de imagen*/
+}
+
+
+#menu {
+
+	/*caja menu*/
+
+	border: 2px solid lightCoral;
+	color: #a3297a;
+	background-color: #ffffb3;
+	
+	padding: 8px; /*espacio interior de la caja*/
+	margin: 15px; /*espacio entre cajas*/
+	margin-left: auto; /*centra las cajas por la izquierda*/
+	margin-right: auto; /*centra las cajas por la derecha*/ 
+	
+	display: flex; /*junto y separo las cajas*/
+	flex-direction: row; /*las oriento en fila*/
+}
+
+
+
+#menu li{
+
+	/*caja de menu*/
+
+	margin: 4px; /*espacio entre cajas*/
+	text-align: left; /*alinea el texto al centro*/
+	margin: 12px; /*espacio entre cajas*/
+	padding: 0px; /*ampliar superficie de interior*/
+	list-style-type: none; /*quita los puntitos*/
+	
+	flex: 0 auto; /*espacio que le corresponde a la caja*/
+}
+
+
+#menu li a{
+
+	/*cambio color de la letra de menu*/
+	color: lightCoral;
+	padding: 8px;
+	display: block;
+	
+}
+
+
+#menu li a:hover{
+	
+	background-color: pink;
+	border-radius: 8px;
+
+}
+
+
+#menu li:hover .submenu{
+
+	/*submenu*/
+	
+	padding-left: 0px; /*centro texto*/
+	background-color: #ffffb3;
+	display: block;
+	position:absolute;
+
+}
+
+#menu li .submenu{
+
+	display: none;
+
+}
+
+
+
+
+.contenedor-portada {
+
+	/*contiene todas las características de la imagen*/
+	
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 250px;
+	
+}
+
+
+.contenedor-articulo{
+	display: flex;
+	flex-direction:row;
+	margin: 15px;
+	background-color: #DDA0DD;
+
+}
+
+.imagen{
+	padding: 10px;
+}
+
+.texto{
+	padding: 10px;
+}
+
+
+
+
+/*cajas divisorias*/
+
+navigation{
+	border: 2px solid #a3297a;
+}
+
+
+header{
+	border: 0px solid #a3297a;
+}
+
+
+main{
+	display: flex;
+	flex-direction:row;
+}
+
+
+main .columna-principal {
+	order: 1;
+	flex: 3;
+
+}
+
+
+
+main .columna-lateral{
+	background-color: #FAFAD2;
+	order:2;
+	flex: 1;
+	
+}
+
+.lateral{
+	padding: 10px;
+	margin: 10px;
+	background-color:  #DDA0DD;
+}
+
+
+
+
+footer {
+	background-color: #DDA0DD;
+	margin-top:10px;
+	height: 50px;
+}
+
+
